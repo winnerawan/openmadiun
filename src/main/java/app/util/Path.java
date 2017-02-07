@@ -16,6 +16,7 @@ public class Path {
         public static final String PLACE_CATEGORY = "/place/categories";
         public static final String RESERVED_1 = "/place/category/add";
         public static final String RESERVED_2 = "/place/add";
+        public static final String ADD_KOST = "/place/kost/add";
         public static final String PLACES = "/places";
         public static final String PLACE = "/place/:category";
 

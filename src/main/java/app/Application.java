@@ -2,10 +2,7 @@ package app;
 
 import app.controller.IndexController;
 import app.db.DatabaseHelper;
-import app.place.Category;
-import app.place.Place;
-import app.place.PlaceController;
-import app.place.ZipCode;
+import app.place.*;
 import app.util.JsonUtil;
 import app.util.Path;
 import app.util.ServerResponse;
@@ -60,6 +57,25 @@ public class Application {
         post(Path.Web.RESERVED_2, (request, response) -> {
             Gson gson = new Gson();
             Place place = gson.fromJson(request.body(), Place.class);
+            return JsonUtil.toJson(PlaceController.insertPlace(place));
+        });
+
+        post(Path.Web.ADD_KOST, (request, response) -> {
+            String title = request.queryParams("title");
+            String address = request.queryParams("address");
+            long latitude = Long.parseLong(request.queryParams("latitude"));
+            long longitude = Long.parseLong(request.queryParams("longitude"));
+            String description = request.queryParams("description");
+            String telephone = request.queryParams("telephone");
+            String category = "kost";
+            String opening_hours = request.queryParams("opening_hours");
+            String price_range = request.queryParams("price_range");
+            float rating = Float.parseFloat(request.queryParams("rating"));
+            String img_url = request.queryParams("img_url");
+
+            Location location = new Location(address, latitude, longitude);
+            Place place = new Place(title, location, description, telephone, category, opening_hours, price_range, rating, img_url);
+
             return JsonUtil.toJson(PlaceController.insertPlace(place));
         });
 
