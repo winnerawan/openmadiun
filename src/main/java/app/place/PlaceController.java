@@ -13,9 +13,9 @@ import java.util.List;
  */
 public class PlaceController {
 
-    static DatabaseHelper helper = new DatabaseHelper();
-    static Datastore datastore = helper.getDataStore();
-    static ServerResponse response = new ServerResponse();
+    private static DatabaseHelper helper = new DatabaseHelper();
+    private static Datastore datastore = helper.getDataStore();
+    private static ServerResponse response = new ServerResponse();
 
 // Dummy insert
     public static ServerResponse insertZipCode(ZipCode zipCode) {

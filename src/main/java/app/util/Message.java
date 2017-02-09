@@ -15,4 +15,9 @@ public class Message {
     public static String OK() {
         return "OK";
     }
+
+    public static String GoAway() {
+        return "Pergi! Cepat pergi!";
+    }
+
 }

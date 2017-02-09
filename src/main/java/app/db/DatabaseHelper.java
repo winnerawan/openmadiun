@@ -1,6 +1,7 @@
 package app.db;
 
 import app.place.ZipCode;
+import app.user.User;
 import com.mongodb.MongoClient;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
@@ -23,8 +24,8 @@ public class DatabaseHelper {
     private static Logger logger = LoggerFactory.getLogger(DatabaseHelper.class);
 
     public DatabaseHelper() {
-        if (!morphia.isMapped(ZipCode.class)) {
-            morphia.map(ZipCode.class);
+        if (!morphia.isMapped(User.class)) {
+            morphia.map(User.class);
             initDatastore();
         } else {
             logger.info("Database Class Mapped Already!");

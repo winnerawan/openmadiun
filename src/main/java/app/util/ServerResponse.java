@@ -19,6 +19,13 @@ public class ServerResponse {
         this.message = message;
     }
 
+    public ServerResponse(int status, String message, Object result)
+    {
+        this.status = status;
+        this.message = message;
+        this.result = result;
+    }
+
     public int getStatus() {
         return status;
     }
