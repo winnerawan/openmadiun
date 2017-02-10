@@ -1,10 +1,11 @@
 # OpenMadiun
 ![alt tag](https://raw.githubusercontent.com/winnerawan/openmadiun/master/sss.png)
+### Build with Spark Java & MongoDB
+### Build Status 
+[![Build Status](https://api.travis-ci.org/winnerawan/openmadiun.svg?branch=master)](https://travis-ci.org/winnerawan/openmadiun)
+
 ## Aplikasi Madiun City Guide dengan banyak fitur
 ### Repository ini sebagai backend (REST API) tanpa database nya tentunya.
-### Build with Spark Java & MongoDB
-## Build Status 
-[![Build Status](https://api.travis-ci.org/winnerawan/openmadiun.svg?branch=master)](https://travis-ci.org/winnerawan/openmadiun)
 ### List Fitur (9 Januari 2017)
   * Sign Up
   * Sign In
