@@ -6,7 +6,7 @@
 
 ## Aplikasi Madiun City Guide dengan banyak fitur
 ### Repository ini sebagai backend (REST API) tanpa database nya tentunya.
-### List Fitur (9 Januari 2017)
+### List Fitur (11 Februari 2017)
   * Sign Up
   * Sign In
   * User Interaction
