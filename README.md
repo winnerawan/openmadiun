@@ -16,6 +16,7 @@
       * Posting
   * Kost
     * Penyedia jasa dapat mempromosikan tempatnya.
+  * Doctor , masukkan penyakit dan dapatkan doctor yg cocok  
   * Homestay
   * Kodepos
   * Cuaca
