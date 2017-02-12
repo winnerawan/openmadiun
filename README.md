@@ -2,8 +2,7 @@
 ![alt tag](https://raw.githubusercontent.com/winnerawan/openmadiun/master/sss.png)
 ### Build with Spark Java & MongoDB
 ### Build Status 
-[![Build Status](https://api.travis-ci.org/winnerawan/openmadiun.svg?branch=master)](https://travis-ci.org/winnerawan/openmadiun)
-
+[![Build Status](https://api.travis-ci.org/winnerawan/openmadiun.svg?branch=master)](https://travis-ci.org/winnerawan/openmadiun)         [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 ## Aplikasi Madiun City Guide dengan banyak fitur
 ### Repository ini sebagai backend (REST API) tanpa database nya tentunya.
 ### List Fitur (11 Februari 2017)
